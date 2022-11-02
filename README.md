@@ -1,1 +1,0 @@
-# bula-customer-app
