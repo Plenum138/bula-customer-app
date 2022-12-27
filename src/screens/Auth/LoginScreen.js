@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -10,47 +10,46 @@ import {
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
-import {Input, Text} from 'react-native-elements';
+import { Input, Text } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/Feather';
 import colors from '../../constants/colors';
 import sizes from '../../constants/sizes';
 import MyButton from '../../components/MyButton';
-import {normalizeFont} from '../../constants/helper';
-import {LoginSchema} from '../../constants/schema';
-import {useDispatch} from 'react-redux';
+import { normalizeFont } from '../../constants/helper';
+import { LoginSchema } from '../../constants/schema';
+import { useDispatch } from 'react-redux';
 //import * as authActions from '../../store/actions/auth';
-import {useForm, Controller} from 'react-hook-form';
-import {yupResolver} from '@hookform/resolvers/yup';
+import { useForm, Controller } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
 import TextErrorMessage from '../../components/TextErrorMessage';
-import {useIsFocused} from '@react-navigation/native';
+import { useIsFocused } from '@react-navigation/native';
 import * as yup from 'yup';
 import MyInput from '../../components/MyInput';
-import {windowWidth,windowHeight} from  '../../constants/helper'
-import * as authActions from '../../store/auth/action';
-const width_proportion = '90%';
-const height_proportion = '80%';
+import { windowWidth, windowHeight } from '../../constants/helper'
+import { login } from '../../store/authSlice';
 
-const LoginScreen = ({navigation}) => {
+
+// let sum = 33;
+// let dataArr = [3 ,4 , 20, 3, 10, 7];
+
+const LoginScreen = ({ navigation }) => {
 
   const isFocused = useIsFocused();
   const dispatch = useDispatch();
-  const {
-    control,
-    handleSubmit,
-    formState: {errors},
-    reset,
-    clearErrors,
-    setFocus,
-  } = useForm({
+
+  const { control, handleSubmit, formState: { errors }, reset, clearErrors } = useForm({
     resolver: yupResolver(LoginSchema),
   });
+
   useEffect(() => {
+
+    dispatch(login({ name: "sdfdf" }))
     clearErrors();
     reset();
   }, [isFocused]);
-  const onSubmit = async data => {
 
-    console.log('data--',data );
+  const onSubmit = async data => {
+    console.log('data--', data);
     dispatch(authActions.login(data));
   };
   return (
@@ -69,30 +68,29 @@ const LoginScreen = ({navigation}) => {
             source={require('../.././assets/images/qr.jpeg')}
           />
         </View>
-   
-        <View style={{marginTop: windowHeight / 20}}>
+
+        <View style={{ marginTop: 30 }}>
           <MyInput
             control={control}
             label={'Shop ID'}
             name="shop_id"
             placeholder="Type Shop ID Here"
-            keyboardType='numeric' 
-         
+            keyboardType='numeric'
+
           />
           <TextErrorMessage error={errors?.shop_id?.message} />
         </View>
-        <View style={{marginTop: windowHeight / 20}}>
+        <View>
           <MyInput
             control={control}
-            label={'product name'}
-            name="product_name"
-            placeholder="product name"
+            label={'Mobile'}
+            name="Mobile Number"
+            placeholder="Mobile Number"
           />
           <TextErrorMessage error={errors?.shop_id?.message} />
         </View>
-       
+
       </View>
-      
       <View style={styles.box2}>
         <MyButton
           title="Login"
@@ -101,6 +99,7 @@ const LoginScreen = ({navigation}) => {
           onPress={handleSubmit(onSubmit)}
         />
       </View>
+
     </ScrollView>
   );
 };
@@ -124,8 +123,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   image: {
-    width: windowWidth/3,
-    height: windowWidth/3,
+    width: windowWidth / 3,
+    height: windowWidth / 3,
     marginTop: windowHeight / 40,
     alignSelf: 'center',
   },
@@ -135,8 +134,8 @@ const styles = StyleSheet.create({
     fontSize: normalizeFont(45),
     marginTop: windowHeight / 20,
   },
- 
-  footerText: {color: colors.input_text, textAlign: 'center', marginTop: 10},
+
+  footerText: { color: colors.input_text, textAlign: 'center', marginTop: 10 },
   footerResetText: {
     color: colors.input_text,
     textDecorationLine: 'underline',

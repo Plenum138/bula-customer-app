@@ -1,22 +1,9 @@
 import React from 'react';
-import {Easing, Text} from 'react-native';
-import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
+import { Easing, Text } from 'react-native';
+import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { getFocusedRouteNameFromRoute, useIsFocused } from '@react-navigation/native';
-import colors from '../constants/colors';
 import Ionicons from 'react-native-vector-icons/Ionicons'
-//apppr
-import HomeScreen from '../screens/app/HomeScreen';
-import ProductListScreen from '../screens/app/ProductListScreen'
-import ProfileScreen from '../screens/app/ProfileScreen';
-import NotificationsListScreen from '../screens/app/NotificationsListScreen';
-import CartScreen from '../screens/app/CartScreen';
-import OrderScreen from '../screens/app/OrderScreen'
-import OrderDetailScreen from '../screens/app/OrderDetailScreen'
-//profile
-
-
+import { HomeScreen, CartScreen, NotificationsListScreen, ProfileScreen, OrderScreen, OrderDetailScreen, ProductListScreen } from '../screens/app/index'
 
 
 
@@ -27,335 +14,146 @@ const Tab = createBottomTabNavigator();
 const titleBarHeader = title => {
   return {
     title: title,
-    headerStyle: {  backgroundColor: secondaryColor },
+    headerStyle: { backgroundColor: "grey" },
     headerTintColor: '#fff',
     headerShadowVisible: false,
-  
   };
 };
 
-function HomeStack({ navigation, route }) {
-
-  React.useLayoutEffect(() => {
-    const routeName = getFocusedRouteNameFromRoute(route);
-  
-    const withoutBootomBar = ["CreateProfileScreen","CreateUserProfileScreen","BusinessPokerRun","BusinessInvitePleyer","BusinessEventDetails","UserEventDetailScreen","UserBookingConfirmScreen",'UserTermsCondtionScreen'];
-
-
-
+const slideConfig = {
+  animation: 'timing',
+  config: {
+    duration: 350,
+    easing: Easing.linear,
+  },
+};
 
 
-    if (withoutBootomBar.includes(routeName)) {
-      navigation.setOptions({
 
-        tabBarStyle: {
-          display: "none",
-        },
 
-      });
-    } else {
+function AppStack({ navigation }) {
 
-      navigation.setOptions({
-        tabBarStyle: {
-          display: "flex",
-          borderTopWidth: 0, backgroundColor: "black",
-          height: Platform.OS === 'ios' ? 90 : 60
-        },
-      });
-    }
-  }, [navigation, route]);
+
   return (
-    <Stack.Navigator screenOptions={{headerTitleAlign: 'center'}}>
-      
-    
-        <Stack.Screen 
-        options={{
-          title: 'HomeScreen',
-          headerBackTitleVisible: false,
-          headerStyle: {
-            backgroundColor: colors.header_color,
-           // color:"white",
-          },
-          headerTitleStyle: {
-            color: colors.header_text_color,
-          },
-          headerTintColor: colors.header_text_color,
-          headerShadowVisible: false,
-        }}
-        name="HomeScreen" 
-        component={HomeScreen} 
-        />
-         <Stack.Screen 
-        options={{
-          title: 'ProductListScreen',
-          headerBackTitleVisible: false,
-          headerStyle: {
-            backgroundColor: colors.header_color,
-           // color:"white",
-          },
-          headerTitleStyle: {
-            color: colors.header_text_color,
-          },
-          headerTintColor: colors.header_text_color,
-          headerShadowVisible: false,
-        }}
-        name="ProductListScreen" 
-        component={ProductListScreen} 
-        />
-       
-        
-        </Stack.Navigator>
-  );
-}
+    <Stack.Navigator
 
-function CustomerStack({ navigation, route }) {
-  
-  
-  React.useLayoutEffect(() => {
-  
-    const routeName = getFocusedRouteNameFromRoute(route);
-    const withoutBootomBar = [];
-
-    if (withoutBootomBar.includes(routeName)) {
-      navigation.setOptions({
-
-        tabBarStyle: {
-          display: "none",
+      screenOptions={{
+        // headerShown: true,
+        gestureEnabled: true,
+        transitionSpec: {
+          open: slideConfig,
+          close: slideConfig,
         },
+        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+      }}
 
-      });
-    } else {
+    // options={{
+    //   headerBackTitleVisible: false,
 
-      navigation.setOptions({
-        tabBarStyle: {
-          display: "flex",
-          borderTopWidth: 0, backgroundColor: "black",
-          height: Platform.OS === 'ios' ? 90 : 60
-        },
-      });
-    }
-  }, [navigation, route]);
-  return (
-    <Stack.Navigator screenOptions={{headerTitleAlign: 'center'}}>
-      
-    
-    <Stack.Screen 
-    options={{
-      title: 'CartScreen',
-      headerBackTitleVisible: false,
-      headerStyle: {
-        backgroundColor: colors.header_color,
-       // color:"white",
-      },
-      headerTitleStyle: {
-        color: colors.header_text_color,
-      },
-      headerTintColor: colors.header_text_color,
-      headerShadowVisible: false,
-    }}
-    name="CartScreen" 
-    component={CartScreen} 
-    />
-   
-    </Stack.Navigator>
-  );
-}
+    //   headerStyle: {
+    //     backgroundColor: colors.body_color,
+    //     // color:"white"          
+    //   },
+    //   headerTitle: (
+    //     props, // App Logo
+    //   ) => (
+    //     <View style={styles.dashboardHeaderBox}>
+    //       <Image
+    //         style={styles.image}
+    //         source={{
+    //           uri: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    //         }}
+    //       />
+    //       <Text style={styles.welcomeText}>Welcome, Grocery Shop</Text>
+    //     </View>
+    //   ),
+    //   headerTitleAlign: 'left',
+    //   headerTitleStyle: {
+    //     color: 'white',
+    //   },
+    //   headerTintColor: 'white',
+    //   headerShadowVisible: false,
+    // }}
 
-function NotificationStack({ navigation, route }) {
-  React.useLayoutEffect(() => {
-    const routeName = getFocusedRouteNameFromRoute(route);
-        // name="UserTermsCondtionScreen"
-        // name="UserTermsCondtionScreen"
-        // name="UserTermsCondtionScreen"
-        const withoutBootomBar = ["UserEditProfile","BusinessEditProfile","BusinessChangePassword","BusinessTransactionHistory","BusinessPaymentMethods","AddNewCardScreen","BusinessSettings","BusinessPrivacyPolicy",'BusinessTermsCondtions','BusinessAboutUs',"UserTransactionHistoryScreen",'UserPaymentmethodScreen','UserSettingScreen','UserTermsCondtionScreen','UserPrivacyPolicyScreen','UserAboutUsScreen, EventDetail'];
+    >
+      <Stack.Screen
+        options={{ headerShown: false }}
+        name="BottomNavigation"
+        component={BottomNavigation}
+      />
 
-    if (withoutBootomBar.includes(routeName)) {
-      navigation.setOptions({
+      <Stack.Screen options={titleBarHeader('Orders')} name="OrderScreen" component={OrderScreen} />
+      <Stack.Screen options={titleBarHeader('Order Detail')} name="OrderDetailScreen" component={OrderDetailScreen} />
+      <Stack.Screen options={titleBarHeader('Product List')} name="ProductListScreen" component={ProductListScreen} />
 
-        tabBarStyle: {
-          display: "none",
-        },
 
-      });
-    } else {
-
-      navigation.setOptions({
-        tabBarStyle: {
-          display: "flex",
-          borderTopWidth: 0, backgroundColor: "black",
-          height: Platform.OS === 'ios' ? 90 : 60
-        },
-      });
-    }
-  }, [navigation, route]);
-  return (
-    <Stack.Navigator screenOptions={{headerTitleAlign: 'center'}}>
-      
-    
-    <Stack.Screen 
-    options={{
-      title: 'Notification',
-      headerBackTitleVisible: false,
-      headerStyle: {
-        backgroundColor: colors.header_color,
-       // color:"white",
-      },
-      headerTitleStyle: {
-        color: colors.header_text_color,
-      },
-      headerTintColor: colors.header_text_color,
-      headerShadowVisible: true,
-    }}
-    name="NotificationsListScreen" 
-    component={NotificationsListScreen} 
-    /></Stack.Navigator>
-  );
-}
-
-function ProfileStack({ navigation, route }) {
-  React.useLayoutEffect(() => {
-    const routeName = getFocusedRouteNameFromRoute(route);
-        // name="UserTermsCondtionScreen"
-        // name="UserTermsCondtionScreen"
-        // name="UserTermsCondtionScreen"
-        const withoutBootomBar = [];
-
-    if (withoutBootomBar.includes(routeName)) {
-      navigation.setOptions({
-
-        tabBarStyle: {
-          display: "none",
-        },
-
-      });
-    } else {
-
-      navigation.setOptions({
-        tabBarStyle: {
-          display: "flex",
-          borderTopWidth: 0, backgroundColor: "black",
-          height: Platform.OS === 'ios' ? 90 : 60
-        },
-      });
-    }
-  }, [navigation, route]);
-  return (
-    <Stack.Navigator screenOptions={{headerTitleAlign: 'center'}}>
-      
-    
-    <Stack.Screen 
-    options={{
-      title: 'Profile',
-      headerBackTitleVisible: false,
-      headerStyle: {
-        backgroundColor: colors.header_color,
-       // color:"white",
-      },
-      headerTitleStyle: {
-        color: colors.header_text_color,
-      },
-      headerTintColor: colors.header_text_color,
-      headerShadowVisible: false,
-    }}
-    name="ProfileScreen" 
-    component={ProfileScreen} 
-    
-    />
-     <Stack.Screen 
-    options={{
-      title: 'Order History',
-      headerBackTitleVisible: false,
-      headerStyle: {
-        backgroundColor: colors.header_color,
-       // color:"white",
-      },
-      headerTitleStyle: {
-        color: colors.header_text_color,
-      },
-      headerTintColor: colors.header_text_color,
-      headerShadowVisible: false,
-    }}
-    name="OrderScreen" 
-    component={OrderScreen} 
-    
-    />
-     <Stack.Screen 
-    options={{
-      title: 'Order Details',
-      headerBackTitleVisible: false,
-      headerStyle: {
-        backgroundColor: colors.header_color,
-       // color:"white",
-      },
-      headerTitleStyle: {
-        color: colors.header_text_color,
-      },
-      headerTintColor: colors.header_text_color,
-      headerShadowVisible: false,
-    }}
-    name="OrderDetailScreen" 
-    component={OrderDetailScreen} 
-    
-    />
-    
     </Stack.Navigator>
   );
 }
 
 
 
-const AppStack = ({ navigation }) => {
-const isFocused = useIsFocused();
+const BottomNavigation = ({ navigation }) => {
 
-return (
-   
-  <Tab.Navigator
-  screenOptions={({ route }) => ({
-  //  tabBarShowLabel: false,
 
-    tabBarIcon: ({ focused, color, size }) => {
-      let iconName;
-      let rn = route.name;
+  return (
 
-      if (rn === "home") {
-       
-        iconName = focused ? 'home' : "home-outline"
-      }
-      else if (rn === "cart") {
-        iconName = focused ? 'cart' : "cart-outline"
-      }
-      else if (rn === "notification") {
-        iconName = focused ?  "notifications-sharp":'ios-notifications-outline' 
-      }
-      else if (rn === "profile") {
-        iconName = focused ?  "person":'person-outline' 
-      }
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
 
-      return (
-        <>
-      <Ionicons name={iconName} size={size} color={'white'} />
-      
-      </>
-      )
-    },
- //   tabBarHideOnKeyboard: true,
-  tabBarStyle: { height: 300 },
- 
-   // activeBackgroundColor: 'black',
-    tabBarActiveTintColor: 'white',
-      tabBarInactiveTintColor: "grey",
- //  headerShown: true, // For Hide Tab Navigator Heading
-   // tabBarShowLabel: false
-   
-  })}
-  >
-  <Tab.Screen options={{headerShown:false}}  name="home" component={HomeStack} />
-  <Tab.Screen options={{headerShown:false}} name="cart" component={CustomerStack} />
-  <Tab.Screen options={{headerShown:false}} name="notification" component={NotificationStack} />
-  <Tab.Screen options={{headerShown:false}} name="profile" component={ProfileStack} />
-</Tab.Navigator>
+        tabBarIcon: ({ focused, color, size }) => {
+          let iconName;
+          let rn = route.name;
+          if (rn === "Home") {
+            iconName = focused ? 'home' : "home-outline"
+          }
+          else if (rn === "Cart") {
+            iconName = focused ? 'cart' : "cart-outline"
+          }
+          else if (rn === "Notification") {
+            iconName = focused ? "notifications-sharp" : 'ios-notifications-outline'
+          }
+          else if (rn === "Profile") {
+            iconName = focused ? "person" : 'person-outline'
+          }
 
-);
+          return (
+            <Ionicons name={iconName} size={size} color={'#161515'} />
+          )
+        },
+
+
+
+        tabBarHideOnKeyboard: true,
+        tabBarStyle: {
+          backgroundColor: '#FFFFFF',
+          height: 60,
+          borderTopColor: "black",
+        },
+        activeBackgroundColor: 'black',
+        tabBarLabelStyle: {
+          paddingBottom: 10,
+          fontSize: 10,
+          fontWeight: 'bold',
+        },
+
+        // tabBarItemStyle: {
+        //   borderRightWidth: 0.5,
+        //   borderRightColor: "black"
+        // },
+
+        tabBarActiveTintColor: '#161515',
+        tabBarInactiveTintColor: 'grey',
+
+      })}
+    >
+      <Tab.Screen options={{ headerShown: false }} name="Home" component={HomeScreen} />
+      <Tab.Screen options={{ headerShown: false }} name="Cart" component={CartScreen} />
+      <Tab.Screen options={{ headerShown: false }} name="Notification" component={NotificationsListScreen} />
+      <Tab.Screen options={{ headerShown: false }} name="Profile" component={ProfileScreen} />
+    </Tab.Navigator>
+
+  );
 
 
 }
