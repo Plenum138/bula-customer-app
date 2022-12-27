@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import axiosRequest from "../constants/axiosRequest";
 
 const authSlice = createSlice({
     name: "auth",
@@ -27,4 +28,17 @@ export default authSlice.reducer;
 
 
 
+export function login(paramData) {
+    return async dispatch => {
+        try {
+
+            console.log('api calling', paramData)
+            // authIsLoadingReducer(true);
+            // let { data } = axiosRequest.post("/login", paramData);
+            // console.log(data)
+        } catch (error) {
+            console.log('catch error', error)
+        }
+    }
+}
 
