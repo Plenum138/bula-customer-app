@@ -6,3 +6,4 @@
 @property (nonatomic, strong) UIWindow *window;
 
 @end
+/Users/ashishjethvani/Desktop/plenumPrject/bula-shop-app/ios/BulaShop.xcodeproj
