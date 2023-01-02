@@ -3,29 +3,34 @@ import React from 'react'
 import { normalizeFont, windowHeight, windowWidth } from '../constants/helper'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
+import FastImageCaching from './FastImageCaching'
+
+let image = "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51MGBl1IwlL._SX300_SY300_QL70_FMwebp_.jpg"
+
 const Cart = () => {
     return (
         <View style={styles.container}>
             <View>
                 <View style={styles.imageBox}>
-                    <Image style={styles.image} source={require('../assets/images/category_img/vegetables/patato.png')} />
-                </View>
-                <View style={styles.btnContainer}>
-                    <TouchableOpacity style={styles.btn}>
-                        <FontAwesome size={27} color="#E08F5F" name="minus-circle" />
-                    </TouchableOpacity>
-                    <Text style={styles.qtyText}>2</Text>
-                    <TouchableOpacity style={styles.btn}>
-                        <FontAwesome size={27} color="#E08F5F" name="plus-circle" />
-                    </TouchableOpacity>
+                    <FastImageCaching styles={styles.image} image={image} />
+                    {/* <Image style={styles.image} source={image} /> */}
                 </View>
             </View>
             <View style={styles.details}>
                 <View>
-                    <Text style={[styles.itemName, { fontWeight: "700" }]}>khira</Text>
                     <View style={styles.alignPriceText}>
-                        <Text style={styles.itemName}>Qty: 1</Text>
-                        <Text style={styles.itemName}>40.00 rs</Text>
+                        <Text style={[styles.itemName, { fontWeight: "700" }]}>khira </Text>
+                        <FontAwesome style={{ textAlign: "right", }} size={20} color="lightgreen" name="window-close" />
+                    </View>
+                    <Text style={{ fontSize: normalizeFont(16), fontWeight: "700" }}>2KG</Text>
+                    <View style={[styles.alignPriceText, { marginTop: 10 }]}>
+                        <Text style={styles.itemName}>20.00 </Text>
+
+                        <View style={{ flexDirection: "row", justifyContent: "space-between", width: 60, }}>
+                            <FontAwesome size={20} color="lightgreen" name="minus-square" />
+                            <Text style={{ fontSize: normalizeFont(16), fontWeight: "600", color: "black" }}> 2 </Text>
+                            <FontAwesome size={20} color="lightgreen" name="plus-square" />
+                        </View>
                     </View>
                 </View>
 
@@ -89,3 +94,44 @@ const styles = StyleSheet.create({
         flexDirection: 'row', justifyContent: 'space-between', width: windowWidth / 1.6
     }
 })
+
+
+
+
+
+
+
+// const Cart = () => {
+//     return (
+//         <View style={styles.container}>
+//             <FastImageCaching styles={styles.image} image={image} />
+
+//             <View style={{ paddingVertical: 10 }}>
+//                 <Text style={{ fontSize: normalizeFont(18), fontWeight: "600", color: "black" }}> Aata (Aashirwad) </Text>
+//                 <Text style={{ fontSize: normalizeFont(16), fontWeight: "600", color: "black" }}> 20 KG </Text>
+
+//                 <Text style={{ fontSize: normalizeFont(16), marginTop: 10, fontWeight: "600", color: "green" }}> 20.00 </Text>
+//             </View>
+//             <View style={{ paddingVertical: 10 }}>
+//                 <FontAwesome style={{ textAlign: "right", }} size={20} color="lightgreen" name="window-close" />
+
+//                 <View style={{ flexDirection: "row", position: "absolute", bottom: 10 }}>
+                    // <FontAwesome size={20} color="lightgreen" name="minus-square" />
+                    // <Text style={{ fontSize: normalizeFont(16), fontWeight: "600", color: "black" }}> 2 </Text>
+                    // <FontAwesome size={20} color="lightgreen" name="plus-square" />
+//                 </View>
+//             </View>
+//         </View>
+//     )
+// }
+
+
+// const styles = StyleSheet.create({
+//     container: {
+//         flexDirection: "row",
+//     },
+//     image: {
+//         height: 100,
+//         width: 100
+//     }
+// })

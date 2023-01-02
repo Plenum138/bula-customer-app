@@ -14,7 +14,7 @@ import AuthStack from '../navigations/AuthStack';
 import AppStack from '../navigations/AppStack';
 
 const AppNavContainer = (props) => {
-  const [isToken, isSetToken] = useState(false)
+  const [isToken, isSetToken] = useState(true)
   return (
     <SafeAreaView style={styles.container} >
       <NavigationContainer>

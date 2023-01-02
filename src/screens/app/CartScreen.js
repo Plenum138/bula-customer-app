@@ -24,9 +24,13 @@ const CartScreen = () => {
   }
 
   return (
-    <View style={{ flex: 1, paddingVertical: 10 }}>
-      {/* <Text style={{ textAlign: "center", fontSize: normalizeFont(20), color: "black", fontWeight: "bold" }}> Cart </Text> */}
+    <View style={{ flex: 1, paddingVertical: 10, backgroundColor: "white" }}>
+
+      <Text style={{ textAlign: "center", fontSize: normalizeFont(26), color: "black", fontWeight: "500", }}> My Cart </Text>
+
+
       <View style={styles.box1}>
+
 
         <FlatList
           data={data}
@@ -67,10 +71,10 @@ export default CartScreen
 const styles = StyleSheet.create({
   box1: {
     alignSelf: 'center',
-    backgroundColor: "white",
-    marginVertical: 20,
+    // backgroundColor: "white",
+    // marginVertical: 20,
     height: '70%',
-    paddingVertical: 20,
+    // paddingVertical: 20,
     // marginBottom: 200
   },
   box2: {
