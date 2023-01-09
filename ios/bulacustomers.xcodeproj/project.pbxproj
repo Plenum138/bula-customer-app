@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* BulaShopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BulaShopTests.m */; };
+		00E356F31AD99517003FC87E /* bulacustomersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* bulacustomersTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		70C368EA28D1AD95001791D3 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 70C368E928D1AD94001791D3 /* Fonts */; };
+		40C1B604B66EF756E07D70AC /* libPods-bulacustomers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2784EDBA304FE7ADD59DC48 /* libPods-bulacustomers.a */; };
+		70DACC93296C32BA002BDFEF /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 70DACC92296C32BA002BDFEF /* Fonts */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		BC5DE2D6E00E02A1BBDEB87B /* libPods-BulaShop-BulaShopTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 392C7044195CCE9A9EDAF9DA /* libPods-BulaShop-BulaShopTests.a */; };
-		F0D3B5E7FB3AE24C115C866E /* libPods-BulaShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8F708A345A9BFB0D9E6026 /* libPods-BulaShop.a */; };
+		8E062E59F0B4B2225A6AA738 /* libPods-bulacustomers-bulacustomersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1171C8B66BDE1677B705F7D0 /* libPods-bulacustomers-bulacustomersTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,29 +23,29 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = BulaShop;
+			remoteInfo = bulacustomers;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* BulaShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BulaShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* bulacustomersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bulacustomersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* BulaShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BulaShopTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* BulaShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulaShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BulaShop/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = BulaShop/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BulaShop/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BulaShop/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BulaShop/main.m; sourceTree = "<group>"; };
-		392C7044195CCE9A9EDAF9DA /* libPods-BulaShop-BulaShopTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BulaShop-BulaShopTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		490FD639526A074ECDC12078 /* Pods-BulaShop-BulaShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BulaShop-BulaShopTests.release.xcconfig"; path = "Target Support Files/Pods-BulaShop-BulaShopTests/Pods-BulaShop-BulaShopTests.release.xcconfig"; sourceTree = "<group>"; };
-		5C4AE0264C443A965D144B73 /* Pods-BulaShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BulaShop.debug.xcconfig"; path = "Target Support Files/Pods-BulaShop/Pods-BulaShop.debug.xcconfig"; sourceTree = "<group>"; };
-		70C368E928D1AD94001791D3 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../node_modules/react-native-vector-icons/Fonts"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BulaShop/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9C8F708A345A9BFB0D9E6026 /* libPods-BulaShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BulaShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0D9089BD5BF4E81A04F4E3A /* Pods-BulaShop-BulaShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BulaShop-BulaShopTests.debug.xcconfig"; path = "Target Support Files/Pods-BulaShop-BulaShopTests/Pods-BulaShop-BulaShopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* bulacustomersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bulacustomersTests.m; sourceTree = "<group>"; };
+		0AE0B27C04A417D202A149C8 /* Pods-bulacustomers-bulacustomersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bulacustomers-bulacustomersTests.debug.xcconfig"; path = "Target Support Files/Pods-bulacustomers-bulacustomersTests/Pods-bulacustomers-bulacustomersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1171C8B66BDE1677B705F7D0 /* libPods-bulacustomers-bulacustomersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bulacustomers-bulacustomersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* bulacustomers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bulacustomers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = bulacustomers/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = bulacustomers/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = bulacustomers/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = bulacustomers/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = bulacustomers/main.m; sourceTree = "<group>"; };
+		70DACC92296C32BA002BDFEF /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = bulacustomers/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AE4571F396CECF3C103B9BE /* Pods-bulacustomers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bulacustomers.debug.xcconfig"; path = "Target Support Files/Pods-bulacustomers/Pods-bulacustomers.debug.xcconfig"; sourceTree = "<group>"; };
+		940FE49D3E8DC95460D7C878 /* Pods-bulacustomers-bulacustomersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bulacustomers-bulacustomersTests.release.xcconfig"; path = "Target Support Files/Pods-bulacustomers-bulacustomersTests/Pods-bulacustomers-bulacustomersTests.release.xcconfig"; sourceTree = "<group>"; };
+		955A969E4D9AC9A6A04FFDAF /* Pods-bulacustomers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bulacustomers.release.xcconfig"; path = "Target Support Files/Pods-bulacustomers/Pods-bulacustomers.release.xcconfig"; sourceTree = "<group>"; };
+		A2784EDBA304FE7ADD59DC48 /* libPods-bulacustomers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bulacustomers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F298D031065194543F27734E /* Pods-BulaShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BulaShop.release.xcconfig"; path = "Target Support Files/Pods-BulaShop/Pods-BulaShop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5DE2D6E00E02A1BBDEB87B /* libPods-BulaShop-BulaShopTests.a in Frameworks */,
+				8E062E59F0B4B2225A6AA738 /* libPods-bulacustomers-bulacustomersTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,20 +61,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0D3B5E7FB3AE24C115C866E /* libPods-BulaShop.a in Frameworks */,
+				40C1B604B66EF756E07D70AC /* libPods-bulacustomers.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* BulaShopTests */ = {
+		00E356EF1AD99517003FC87E /* bulacustomersTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* BulaShopTests.m */,
+				00E356F21AD99517003FC87E /* bulacustomersTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = BulaShopTests;
+			path = bulacustomersTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -85,10 +85,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* BulaShop */ = {
+		13B07FAE1A68108700A75B9A /* bulacustomers */ = {
 			isa = PBXGroup;
 			children = (
-				70C368E928D1AD94001791D3 /* Fonts */,
+				70DACC92296C32BA002BDFEF /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -96,15 +96,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = BulaShop;
+			name = bulacustomers;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				9C8F708A345A9BFB0D9E6026 /* libPods-BulaShop.a */,
-				392C7044195CCE9A9EDAF9DA /* libPods-BulaShop-BulaShopTests.a */,
+				A2784EDBA304FE7ADD59DC48 /* libPods-bulacustomers.a */,
+				1171C8B66BDE1677B705F7D0 /* libPods-bulacustomers-bulacustomersTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,9 +119,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* BulaShop */,
+				13B07FAE1A68108700A75B9A /* bulacustomers */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* BulaShopTests */,
+				00E356EF1AD99517003FC87E /* bulacustomersTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -134,8 +134,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* BulaShop.app */,
-				00E356EE1AD99517003FC87E /* BulaShopTests.xctest */,
+				13B07F961A680F5B00A75B9A /* bulacustomers.app */,
+				00E356EE1AD99517003FC87E /* bulacustomersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5C4AE0264C443A965D144B73 /* Pods-BulaShop.debug.xcconfig */,
-				F298D031065194543F27734E /* Pods-BulaShop.release.xcconfig */,
-				C0D9089BD5BF4E81A04F4E3A /* Pods-BulaShop-BulaShopTests.debug.xcconfig */,
-				490FD639526A074ECDC12078 /* Pods-BulaShop-BulaShopTests.release.xcconfig */,
+				8AE4571F396CECF3C103B9BE /* Pods-bulacustomers.debug.xcconfig */,
+				955A969E4D9AC9A6A04FFDAF /* Pods-bulacustomers.release.xcconfig */,
+				0AE0B27C04A417D202A149C8 /* Pods-bulacustomers-bulacustomersTests.debug.xcconfig */,
+				940FE49D3E8DC95460D7C878 /* Pods-bulacustomers-bulacustomersTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -154,47 +154,47 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* BulaShopTests */ = {
+		00E356ED1AD99517003FC87E /* bulacustomersTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BulaShopTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "bulacustomersTests" */;
 			buildPhases = (
-				8F6131DA4E963D60FEB2965C /* [CP] Check Pods Manifest.lock */,
+				918B7B6CA59B2554231BB73D /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				044214D422C39AE526E61BB8 /* [CP] Embed Pods Frameworks */,
-				FA5C29E6F420DDF8B5AE9378 /* [CP] Copy Pods Resources */,
+				49D548317E292ED5262EB6E3 /* [CP] Embed Pods Frameworks */,
+				044981559DCE0121E393E0FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = BulaShopTests;
-			productName = BulaShopTests;
-			productReference = 00E356EE1AD99517003FC87E /* BulaShopTests.xctest */;
+			name = bulacustomersTests;
+			productName = bulacustomersTests;
+			productReference = 00E356EE1AD99517003FC87E /* bulacustomersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* BulaShop */ = {
+		13B07F861A680F5B00A75B9A /* bulacustomers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BulaShop" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "bulacustomers" */;
 			buildPhases = (
-				0453D06C3C58680692DCBCC7 /* [CP] Check Pods Manifest.lock */,
+				F5ECECDB61858D2513D91B22 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				36EBD06A431077DA18B600CD /* [CP] Embed Pods Frameworks */,
-				FFB782DAED83A38B55833379 /* [CP] Copy Pods Resources */,
+				A15BA58877D60B1E28846B08 /* [CP] Embed Pods Frameworks */,
+				F92FA696256E2BCE5937C0CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BulaShop;
-			productName = BulaShop;
-			productReference = 13B07F961A680F5B00A75B9A /* BulaShop.app */;
+			name = bulacustomers;
+			productName = bulacustomers;
+			productReference = 13B07F961A680F5B00A75B9A /* bulacustomers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BulaShop" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "bulacustomers" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,8 +227,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* BulaShop */,
-				00E356ED1AD99517003FC87E /* BulaShopTests */,
+				13B07F861A680F5B00A75B9A /* bulacustomers */,
+				00E356ED1AD99517003FC87E /* bulacustomersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,7 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70C368EA28D1AD95001791D3 /* Fonts in Resources */,
+				70DACC93296C32BA002BDFEF /* Fonts in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -270,99 +270,116 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		044214D422C39AE526E61BB8 /* [CP] Embed Pods Frameworks */ = {
+		044981559DCE0121E393E0FD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BulaShop-BulaShopTests/Pods-BulaShop-BulaShopTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BulaShop-BulaShopTests/Pods-BulaShop-BulaShopTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BulaShop-BulaShopTests/Pods-BulaShop-BulaShopTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0453D06C3C58680692DCBCC7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BulaShop-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		36EBD06A431077DA18B600CD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BulaShop/Pods-BulaShop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BulaShop/Pods-BulaShop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BulaShop/Pods-BulaShop-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F6131DA4E963D60FEB2965C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BulaShop-BulaShopTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FA5C29E6F420DDF8B5AE9378 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BulaShop-BulaShopTests/Pods-BulaShop-BulaShopTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-bulacustomers-bulacustomersTests/Pods-bulacustomers-bulacustomersTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BulaShop-BulaShopTests/Pods-BulaShop-BulaShopTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-bulacustomers-bulacustomersTests/Pods-bulacustomers-bulacustomersTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BulaShop-BulaShopTests/Pods-BulaShop-BulaShopTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bulacustomers-bulacustomersTests/Pods-bulacustomers-bulacustomersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49D548317E292ED5262EB6E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bulacustomers-bulacustomersTests/Pods-bulacustomers-bulacustomersTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bulacustomers-bulacustomersTests/Pods-bulacustomers-bulacustomersTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bulacustomers-bulacustomersTests/Pods-bulacustomers-bulacustomersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		918B7B6CA59B2554231BB73D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bulacustomers-bulacustomersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A15BA58877D60B1E28846B08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bulacustomers/Pods-bulacustomers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bulacustomers/Pods-bulacustomers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bulacustomers/Pods-bulacustomers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5ECECDB61858D2513D91B22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bulacustomers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F92FA696256E2BCE5937C0CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bulacustomers/Pods-bulacustomers-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bulacustomers/Pods-bulacustomers-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bulacustomers/Pods-bulacustomers-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -384,23 +401,6 @@
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FFB782DAED83A38B55833379 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BulaShop/Pods-BulaShop-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BulaShop/Pods-BulaShop-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BulaShop/Pods-BulaShop-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -408,7 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* BulaShopTests.m in Sources */,
+				00E356F31AD99517003FC87E /* bulacustomersTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +426,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* BulaShop */;
+			target = 13B07F861A680F5B00A75B9A /* bulacustomers */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -434,14 +434,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0D9089BD5BF4E81A04F4E3A /* Pods-BulaShop-BulaShopTests.debug.xcconfig */;
+			baseConfigurationReference = 0AE0B27C04A417D202A149C8 /* Pods-bulacustomers-bulacustomersTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BulaShopTests/Info.plist;
+				INFOPLIST_FILE = bulacustomersTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,17 +455,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BulaShop.app/BulaShop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bulacustomers.app/bulacustomers";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 490FD639526A074ECDC12078 /* Pods-BulaShop-BulaShopTests.release.xcconfig */;
+			baseConfigurationReference = 940FE49D3E8DC95460D7C878 /* Pods-bulacustomers-bulacustomersTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = BulaShopTests/Info.plist;
+				INFOPLIST_FILE = bulacustomersTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -479,20 +479,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BulaShop.app/BulaShop";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bulacustomers.app/bulacustomers";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C4AE0264C443A965D144B73 /* Pods-BulaShop.debug.xcconfig */;
+			baseConfigurationReference = 8AE4571F396CECF3C103B9BE /* Pods-bulacustomers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KK97JRZMH3;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = BulaShop/Info.plist;
+				INFOPLIST_FILE = bulacustomers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,8 +501,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bulashop;
-				PRODUCT_NAME = BulaShop;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = bulacustomers;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -512,13 +511,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F298D031065194543F27734E /* Pods-BulaShop.release.xcconfig */;
+			baseConfigurationReference = 955A969E4D9AC9A6A04FFDAF /* Pods-bulacustomers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KK97JRZMH3;
-				INFOPLIST_FILE = BulaShop/Info.plist;
+				INFOPLIST_FILE = bulacustomers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,8 +526,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bulashop;
-				PRODUCT_NAME = BulaShop;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = bulacustomers;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -675,7 +673,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BulaShopTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "bulacustomersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -684,7 +682,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BulaShop" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "bulacustomers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -693,7 +691,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "BulaShop" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "bulacustomers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
