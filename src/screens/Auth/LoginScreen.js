@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   StyleSheet,
   View,
@@ -6,44 +6,48 @@ import {
   ScrollView,
   Image,
   TouchableOpacity,
-  KeyboardAvoidingView
+  KeyboardAvoidingView,
 } from 'react-native';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
-import { Input, Text } from 'react-native-elements';
+import {Input, Text} from 'react-native-elements';
 import Icon from 'react-native-vector-icons/Feather';
 import colors from '../../constants/colors';
 import sizes from '../../constants/sizes';
 import MyButton from '../../components/MyButton';
-import { normalizeFont } from '../../constants/helper';
-import { LoginSchema } from '../../constants/schema';
-import { useDispatch } from 'react-redux';
+import {normalizeFont} from '../../constants/helper';
+import {LoginSchema} from '../../constants/schema';
+import {useDispatch} from 'react-redux';
 //import * as authActions from '../../store/actions/auth';
-import { useForm, Controller } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
+import {useForm, Controller} from 'react-hook-form';
+import {yupResolver} from '@hookform/resolvers/yup';
 import TextErrorMessage from '../../components/TextErrorMessage';
-import { useIsFocused } from '@react-navigation/native';
+import {useIsFocused} from '@react-navigation/native';
 import * as yup from 'yup';
 import MyInput from '../../components/MyInput';
-import { windowWidth, windowHeight } from '../../constants/helper'
-import { login } from '../../store/authSlice';
-
+import {windowWidth, windowHeight} from '../../constants/helper';
+import {login} from '../../store/authSlice';
+import * as authActions from '../../store/auth/action';
 
 // let sum = 33;
 // let dataArr = [3 ,4 , 20, 3, 10, 7];
 
-const LoginScreen = ({ navigation }) => {
-
+const LoginScreen = ({navigation}) => {
   const isFocused = useIsFocused();
   const dispatch = useDispatch();
 
-  const { control, handleSubmit, formState: { errors }, reset, clearErrors } = useForm({
+  const {
+    control,
+    handleSubmit,
+    formState: {errors},
+    reset,
+    clearErrors,
+  } = useForm({
     resolver: yupResolver(LoginSchema),
   });
 
   useEffect(() => {
-
-    dispatch(login({ name: "sdfdf" }))
+    dispatch(login({name: 'sdfdf'}));
     clearErrors();
     reset();
   }, [isFocused]);
@@ -69,14 +73,13 @@ const LoginScreen = ({ navigation }) => {
           />
         </View>
 
-        <View style={{ marginTop: 30 }}>
+        <View style={{marginTop: windowHeight / 25}}>
           <MyInput
             control={control}
             label={'Shop ID'}
             name="shop_id"
             placeholder="Type Shop ID Here"
-            keyboardType='numeric'
-
+            keyboardType="numeric"
           />
           <TextErrorMessage error={errors?.shop_id?.message} />
         </View>
@@ -84,12 +87,11 @@ const LoginScreen = ({ navigation }) => {
           <MyInput
             control={control}
             label={'Mobile'}
-            name="Mobile Number"
+            name="mobile_number"
             placeholder="Mobile Number"
           />
-          <TextErrorMessage error={errors?.shop_id?.message} />
+          <TextErrorMessage error={errors?.mobile_number?.message} />
         </View>
-
       </View>
       <View style={styles.box2}>
         <MyButton
@@ -99,7 +101,6 @@ const LoginScreen = ({ navigation }) => {
           onPress={handleSubmit(onSubmit)}
         />
       </View>
-
     </ScrollView>
   );
 };
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
     marginTop: windowHeight / 20,
   },
 
-  footerText: { color: colors.input_text, textAlign: 'center', marginTop: 10 },
+  footerText: {color: colors.input_text, textAlign: 'center', marginTop: 10},
   footerResetText: {
     color: colors.input_text,
     textDecorationLine: 'underline',

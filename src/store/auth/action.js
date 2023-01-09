@@ -1,13 +1,38 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import axiosRequest from '../../constants/axiosRequest';
 //import snack from '../../components/SnackBar/SnackBar';
 //import BASE_URL from '../../config/url';
-const LOGIN='login'
+import {
+  authIsLoadingReducer,
+  userTokenDataReducer,
+  logoutReducer,
+} from './reducer';
 
-export const login=()=>{
-    return async dispatch => {
-        return  dispatch({ type:LOGIN });
+export const login = paramData => {
+  return async dispatch => {
+    dispatch(authIsLoadingReducer(true));
+    try {
+      let {data} = await axiosRequest.post(`customer-login`, paramData);
+
+      dispatch(authIsLoadingReducer(false));
+      if (data.status == false) return error(data.message);
+      let authData = data?.user;
+      authData['token'] = data?.accessToken;
+
+      dispatch(authenticationSaveData(authData));
+    } catch (e) {
+      console.log('catch error:-', e);
+      dispatch(authIsLoadingReducer(false));
     }
-}
+  };
+};
+export const authenticationSaveData = authData => {
+  return async dispatch => {
+    dispatch(userTokenDataReducer(authData));
+    // dispatch({ type: USER_TOKEN_DATA, data: authData })
+    await AsyncStorage.setItem('userToken', JSON.stringify(authData));
+  };
+};
 
 // export const login = payload => {
 //   let status = false;
